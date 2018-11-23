@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+      <title>Semantic UI</title>
+  
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+     
+    </head>
+<body>
+    <div class="ui container">
+      <div class="ui search">
+          <input class="prompt" type="text" placeholder="Search">
+          <div class="results"></div>
+      </div>    
+    </div>
+    <script>
+    var content = [
+     {
+         title: "Semantic UI",
+         description: "Best UI Framework out there.",
+         url: "http://semantic-ui.com"
+     },
+     {
+         title: "Boostrap",
+         description: "Best UI Framework out there.",
+         url: "http://getbootstrap.com"
+     },
+     {
+         title: "Zurb Foundation",
+         description: "Best UI Framework out there.",
+         url: "http://foundation.zurb.com"
+     },
+     {
+         title: "SkelentonCSS",
+         description: "Best UI Framework out there.",
+         url: "http://getskeleton.com"
+     },
+     {
+         title: "Stylus",
+         description: "Best UI Framework out there.",
+         url: "http://stylus-lang.com"
+     },
+     {
+         title: "Semantic UI",
+         description: "Best UI Framework out there."
+     }
+    ];
+    $('.ui.search').search({
+        source: content,
+        searchFullText:false
+    });
+    </script>       
+
+     
+
+</body>
+</html>
